@@ -1,0 +1,7 @@
+declare 
+cursor c1 is select * from Emp;
+begin
+for v1 in c1 loop
+ dbms_output.put_line(v1.ename||'make a salary of '||v1.salary);
+end;
+/
